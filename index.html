@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objednávkový formulář Ezo-Shopu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <form id="myForm">
+      <div class="form-group">
+        <label for="phone">Telefonní číslo:</label>
+        <input type="text" id="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Datum:</label>
+        <input type="date" id="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="time">Čas:</label>
+        <input type="time" id="time" required>
+      </div>
+
+      <div class="form-group">
+        <label for="photo">Fotografie od klienta</label>
+        <input type="file" id="photo" accept="image/*" required>
+        <img class="photo-preview" id="preview" src="#" alt="Náhled fotky">
+      </div>
+
+      <button type="submit" class="submit-btn">OBJEDNAT</button>
+    </form>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
